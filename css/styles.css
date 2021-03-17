@@ -420,4 +420,65 @@ nav ul li {
     font-size: 11px;
   }
 }
+.form-control {
+  background: transparent;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 0.5px;
+  border: 1px solid white;
+  /*opacity: 0.4;*/
+}
 
+#btn-submit {
+  width: 100%; 
+  color: transparent;
+  padding: 14px 20px;
+ /* margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; */
+}
+
+#btn-submit:hover {
+  background-color: rgb(28, 162, 224);
+}
+
+.formGrid {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.contactForm {
+  background: transparent;
+  align-items: center;
+}
+
+input[type=text],
+input[type=email],
+button[type=submit],
+#description {
+  background: transparent;
+  color: white;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: white;
+  align-items: center;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 120px;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 120px;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 120px;
+}
