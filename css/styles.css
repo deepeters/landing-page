@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(71, 194, 243) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background: rgb(71, 194, 243);
+  border-radius: 20px;
+  border: transparent;
+}
+
+.selected {
+  background: rgb(71, 194, 243);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(64, 64, 65);
+  position: relative;
+  height: 100vh;
+  padding: 30px 0px;
+  color: white;
+}
+
+.highlight {
+  color: rgb(28, 162, 224);
+}
+hr {
+  width: 70px;
+  padding: 2.5px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(28, 162, 224);
+}
+.container {
+  margin: 0px 50px;
+  background-color: rgba(27, 27, 27, 0.993);
+  height: 90vh;
+  border-radius: 15px;
+  overflow: auto;
+}
+
+nav {
+  width: 100%;
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  color: white;
+}
+nav .logo {
+  color: inherit;
+  font-size: 27px;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-bottom: 3px solid rgb(28, 162, 224);
+}
+nav ul {
+  display: flex;
+  position: relative;
+}
+nav ul li {
+  list-style: none;
+  position: relative;
+}
+
+.nav-links li a {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  color: inherit;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
+  border: 2.5px solid rgba(27, 27, 27, 0.993);
+}
+
+.nav-links li a:hover {
+  border-bottom: 2.5px solid rgb(28, 162, 224);
+}
+
+.section {
+  width: 100%;
+  height: 450px;
+  margin-bottom: 0px;
+}
+
+.introduction {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 80px;
+}
+.introduction img {
+  height: 250px;
+  border: 10px solid rgb(28, 162, 224);
+  border-radius: 50%;
+}
+
+.introduction .name {
+  font-size: 40px;
+}
+.button {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 10px 0px;
+  width: 100px;
+  background-color: rgba(27, 27, 27, 0.993);
+  color: white;
+  border-radius: 10%;
+  border: 3px solid rgb(28, 162, 224);
+}
+.explore {
+  align-content: center;
+  text-align: center;
+}
+.explore img {
+  background-color: rgb(28, 162, 224);
+  border-radius: 50%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 120px;
+}
+.profile .title {
+  align-self: center;
+  margin-bottom: 10px;
+}
+.my-profile p {
+  line-height: 30px;
+}
+.top {
+  align-self: flex-start;
+  margin-top: 25px;
+  border-radius: 50%;
+  background-color: rgb(28, 162, 224);
+}
+.interests {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 120px;
+}
+.interests .title {
+  align-self: center;
+  margin-bottom: 30px;
+}
+.interests-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.interests .activity {
+  text-align: center;
+  margin: 0px 60px;
+}
+.interests-container .activity img {
+  width: 100px;
+}
+.interests .activity:hover h3 {
+  color: rgb(28, 162, 224);
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 80px;
+}
+.projects .title {
+  margin-left: 48px;
+}
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  margin: 0px auto;
+}
+.projects .card {
+  margin: 5px 6px;
+  width: 260px;
+  height: 260px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 7px 2px rgb(3, 3, 3);
+  -moz-box-shadow: 0px 3px 7px 2px rgb(3, 3, 3);
+  box-shadow: 0px 3px 7px 2px rgb(3, 3, 3);
+}
+.projects .card:hover {
+  -webkit-box-shadow: 0px 3px 7px 2px rgb(28, 162, 224);
+  -moz-box-shadow: 0px 3px 7px 2px rgb(28, 162, 224);
+  box-shadow: 0px 3px 7px 2px rgb(28, 162, 224);
+}
+.card .img {
+  height: 50%;
+}
+.card .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.project-info {
+  padding: 5px;
+  height: 40%;
+  line-height: 15px;
+}
+.project-info h5 {
+  text-align: center;
+}
+.card p {
+  font-size: 13px;
+}
+.card .project-links {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0px;
+}
+.card .project-links a {
+  display: inline-block;
+  background-color: red;
+  padding: 5px;
+  text-decoration: none;
+  background-color: rgba(27, 27, 27, 0.993);
+  color: white;
+  border-radius: 10%;
+  border: 3px solid rgb(28, 162, 224);
+}
+.card .project-links a:hover {
+  border: 3px solid rgba(27, 27, 27, 0.993);
+  color: rgb(28, 162, 224);
+}
+.footer {
+  position: sticky;
+  font-size: 13px;
+  color: white;
+  text-align: center;
+  padding: 7px;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: rgb(28, 162, 224);
+}
+@media only screen and (max-width: 982px) {
+  .section {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+  }
+  .container {
+    background-color: rgba(27, 27, 27, 0.993);
+    height: 100%;
+    border-radius: 15px;
+  }
+  .introduction {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 50px;
+  }
+  .introduction img {
+    height: 200px;
+    border: 10px solid rgb(28, 162, 224);
+    border-radius: 50%;
+  }
+  .introduction .name {
+    font-size: 25px;
+    line-height: 12px;
+  }
+  .button {
+    margin-top: 0px;
+    padding: 2px 0px;
+    width: 100px;
+  }
+  .profile {
+    display: flex;
+
+    flex-direction: column;
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+  .my-profile p {
+    line-height: 18px;
+  }
+  .interests {
+    display: flex;
+    margin-bottom: 150px;
+  }
+  .projects {
+    margin-bottom: 150px;
+  }
+}
+@media only screen and (max-width: 981px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 50px;
+  }
+  .introduction img {
+    height: 200px;
+    border: 10px solid rgb(28, 162, 224);
+    border-radius: 50%;
+  }
+  .introduction .name {
+    font-size: 25px;
+    line-height: 12px;
+  }
+  .button {
+    margin-top: 0px;
+    padding: 2px 0px;
+    width: 100px;
+  }
+  .profile {
+    display: flex;
+
+    flex-direction: column;
+    padding: 10px 30px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .my-profile p {
+    line-height: 18px;
+  }
+
+  .interests {
+    display: flex;
+
+    padding: 50px 0px;
+    margin-bottom: 300px;
+  }
+  .interests-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .interests .activity {
+    margin: 0px 10px;
+  }
+
+  .projects {
+    display: flex;
+
+    margin-bottom: 400px;
+  }
+  .projects-container {
+    display: flex;
+  }
+  .projects .card {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 700px) {
+  .container {
+    height: 100%;
+  }
+  .profile {
+    margin-bottom: 40px;
+    font-size: 14px;
+  }
+  .my-profile p {
+    line-height: 12px;
+  }
+
+  .interests {
+    margin-bottom: 330px;
+  }
+  .interests-container .activity img {
+    width: 70px;
+  }
+  .projects {
+    margin-bottom: 330px;
+  }
+  .projects .card {
+    width: 260px;
+    height: 200px;
+  }
+  .project-info {
+    height: 40%;
+    line-height: 12px;
+  }
+
+  .card p {
+    font-size: 11px;
+  }
+}
