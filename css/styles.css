@@ -489,8 +489,7 @@ button[type=submit],
   justify-content: center;
   align-items: center;
 }
-.card-show {
-}
+.card-show, 
 .card-show h4 {
   text-align: center;
   font-size: 23px;
@@ -517,13 +516,6 @@ div {
   position: relative;
   display: flex;
   justify-content: center;
-  text-align: center;
-}
-
-.title {
-  color:black;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
 }
 
@@ -581,15 +573,6 @@ opacity: 0.5;
   text-align: center;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.bgImg3{
-  background-image: url("../images/assets/backgrounds/c_image.jpg");
-  background-repeat: no-repeat;
-  /* background-attachment: fixed; */
-  background-size: cover;
-  height: 550px;
-  background-position: center;
 }
 
 .social_icons{
